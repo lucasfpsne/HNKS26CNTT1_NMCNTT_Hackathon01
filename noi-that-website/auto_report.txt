@@ -1,0 +1,8 @@
+# Script: auto_report.ps1
+# Tac gia: NGUYEN_DANG_HOANG_MINH
+# Ngay tao: 28/10/2026
+
+Write-Host "Dang loc log..."
+
+"===BAO CAO LOI==="> 
+Gc log/Furniture.log | sls "" >> 

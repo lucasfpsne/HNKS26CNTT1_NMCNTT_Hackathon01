@@ -1,0 +1,36 @@
+PS C:\Users\PC\documents\Homework\NMCNTT\session08> $name = "Bùi Hoàng Bảo Linh"
+PS C:\Users\PC\documents\Homework\NMCNTT\session08> $age = "19"
+PS C:\Users\PC\documents\Homework\NMCNTT\session08> write-output "xin chào $name, $age tuổi"
+xin chào Bùi Hoàng Bảo Linh, 19 tuổi
+PS C:\Users\PC\documents\Homework\NMCNTT\session08> if ($age -ge 18) {write-output "đủ tuổi làm cccd" }
+đủ tuổi làm cccd
+PS C:\Users\PC\documents\Homework\NMCNTT\session08> "xin chao $name, $age tuổi"
+xin chao Bùi Hoàng Bảo Linh, 19 tuổi
+PS C:\Users\PC\documents\Homework\NMCNTT\session08> $age
+19
+PS C:\Users\PC\documents\Homework\NMCNTT\session08> if ($age -ge 18) {write-output "đủ tuổi làm cccd" } else {write-output "không đủ tuổi làm cccd" }
+đủ tuổi làm cccd
+PS C:\Users\PC\documents\Homework\NMCNTT\session08> MKDIR
+
+cmdlet mkdir at command pipeline position 1
+Supply values for the following parameters:
+Path[0]:
+mkdir : Cannot bind argument to parameter 'Path' because it is an empty array.
+At line:1 char:1
++ MKDIR
++ ~~~~~
+    + CategoryInfo          : InvalidData: (:) [mkdir], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorEmptyArrayNotAllowed,mkdir
+
+PS C:\Users\PC\documents\Homework\NMCNTT\session08> New-Item session08.txt
+
+
+    Directory: C:\Users\PC\documents\Homework\NMCNTT\session08
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/14/2026   7:46 AM              0 session08.txt
+
+
+PS C:\Users\PC\documents\Homework\NMCNTT\session08>
